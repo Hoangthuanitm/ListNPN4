@@ -5,558 +5,703 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japanese N4 Grammar Points</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for mobile optimization */
+        @media (max-width: 640px) {
+            table {
+                font-size: 0.75rem; /* Smaller font size for mobile */
+            }
+            th, td {
+                padding: 0.5rem; /* Reduced padding for mobile */
+            }
+            .grammar-highlight {
+                color: red; /* Highlight grammar in examples */
+                font-weight: bold; /* Make highlighted text bold for clarity */
+            }
+        }
+        .grammar-highlight {
+            color: red; /* Highlight grammar in examples */
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
-    <!-- Creating a header section -->
-    <header class="w-full max-w-4xl bg-blue-600 text-white p-6 rounded-lg shadow-lg mb-6">
-        <h1 class="text-3xl font-bold text-center">Tổng Hợp Ngữ Pháp N4</h1>
-        <p class="text-center mt-2">Chúc các bạn học tập vui vẻ</p>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-2 sm:p-4">
+    <!-- Header section -->
+    <header class="w-full max-w-4xl bg-blue-600 text-white p-4 sm:p-6 rounded-lg shadow-lg mb-4 sm:mb-6">
+        <h1 class="text-xl sm:text-3xl font-bold text-center">Tổng Hợp Ngữ Pháp N4</h1>
+        <p class="text-center mt-2 text-sm sm:text-base">Chúc các bạn học tập vui vẻ</p>
     </header>
 
-    <!-- Creating a responsive table for grammar points -->
-    <main class="w-full max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden">
+    <!-- Responsive table for grammar points -->
+    <main class="w-full max-w-4xl bg-white rounded-lg shadow-lg">
         <div class="overflow-x-auto">
-            <table class="w-full table-auto border-collapse">
+            <table class="w-full table-auto border-collapse" aria-label="Japanese N4 Grammar Points">
                 <thead>
                     <tr class="bg-blue-500 text-white">
-                        <th class="px-4 py-2 text-left">順番</th>
-                        <th class="px-4 py-2 text-left">文法</th>
-                        <th class="px-4 py-2 text-left">意味</th>
-                        <th class="px-4 py-2 text-left">例文</th>
+                        <th class="px-2 py-1 sm:px-4 sm:py-2 text-left" scope="col">順番</th>
+                        <th class="px-2 py-1 sm:px-4 sm:py-2 text-left" scope="col">文法</th>
+                        <th class="px-2 py-1 sm:px-4 sm:py-2 text-left" scope="col">意味</th>
+                        <th class="px-2 py-1 sm:px-4 sm:py-2 text-left" scope="col">例文</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Populating table rows with grammar points -->
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">1</td>
-                        <td class="px-4 py-2">ていただけませんか</td>
-                        <td class="px-4 py-2">Làm ơn... giúp tôi được không ạ?</td>
-                        <td class="px-4 py-2">いい先生を紹介していただけませんか。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">1</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">ていただけませんか</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Làm ơn... giúp tôi được không ạ?</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">いい先生を<span class="grammar-highlight">紹介していただけませんか</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">2</td>
-                        <td class="px-4 py-2">Vたらいいですか</td>
-                        <td class="px-4 py-2">Nên làm như thế nào bây giờ?</td>
-                        <td class="px-4 py-2">バレンタインデ</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">2</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vたらいいですか</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Nên làm như thế nào bây giờ?</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">バレンタインデーに何を贈<span class="grammar-highlight">ったらいいですか</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">3</td>
-                        <td class="px-4 py-2">N1 は～が、N2 は～</td>
-                        <td class="px-4 py-2">N1 thì có thể làm nhưng N2 thì không thể</td>
-                        <td class="px-4 py-2">日本語は話せますが、英語はあまり話せません。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">3</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">N1 は～が、N2 は～</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">N1 thì có thể làm nhưng N2 thì không thể</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">日本語<span class="grammar-highlight">は</span>話せます<span class="grammar-highlight">が</span>、英語<span class="grammar-highlight">は</span>あまり話せません。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">4</td>
-                        <td class="px-4 py-2">Nができます / Vることができます</td>
-                        <td class="px-4 py-2">Có thể làm gì</td>
-                        <td class="px-4 py-2">漢字を書くことができます。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">4</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Nができます / Vることができます</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Có thể làm gì</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">漢字を<span class="grammar-highlight">書くことができます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">5</td>
-                        <td class="px-4 py-2">NしかVません</td>
-                        <td class="px-4 py-2">Chỉ ~ (nhấn mạnh giới hạn)</td>
-                        <td class="px-4 py-2">私は英語しか話せません。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">5</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">NしかVません</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Chỉ ~ (nhấn mạnh giới hạn)</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">私は英語<span class="grammar-highlight">しか話せません</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">6</td>
-                        <td class="px-4 py-2">V1ながらV2</td>
-                        <td class="px-4 py-2">Vừa làm việc này, vừa làm việc kia</td>
-                        <td class="px-4 py-2">テレビを見ながら、ご飯を食べます。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">6</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">V1ながらV2</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vừa làm việc này, vừa làm việc kia</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">テレビを<span class="grammar-highlight">見ながら</span>、ご飯を食べます。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">7</td>
-                        <td class="px-4 py-2">～し、～し、（それに）～</td>
-                        <td class="px-4 py-2">Liệt kê các tính chất tương đồng</td>
-                        <td class="px-4 py-2">先生は面白いし、親切だし、それに経験もあります。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">7</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">～し、～し、（それに）～</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Liệt kê các tính chất tương đồng</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">先生は面白い<span class="grammar-highlight">し</span>、親切<span class="grammar-highlight">し</span>、それに経験もあります。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">8</td>
-                        <td class="px-4 py-2">～し、～し、（それで）～</td>
-                        <td class="px-4 py-2">Liệt kê lý do</td>
-                        <td class="px-4 py-2">雨も降っているし、荷物も多いし、それでタクシ</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">8</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">～し、～し、（それで）～</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Liệt kê lý do</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">雨も降っている<span class="grammar-highlight">し</span>、荷物も多い<span class="grammar-highlight">し</span>、それでタクシーに乗ります。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">9</td>
-                        <td class="px-4 py-2">いつもVています</td>
-                        <td class="px-4 py-2">Diễn tả thói quen</td>
-                        <td class="px-4 py-2">暇なとき、いつもテレビを見ています。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">9</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">いつもVています</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Diễn tả thói quen</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">暇なとき、いつもテレビを<span class="grammar-highlight">見ています</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">10</td>
-                        <td class="px-4 py-2">Vてしまいます</td>
-                        <td class="px-4 py-2">Sẽ làm xong / lỡ làm (có cảm giác tiếc nuối)</td>
-                        <td class="px-4 py-2">今、このマンガを読んでしまいます。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">10</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vてしまいます</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Sẽ làm xong / lỡ làm (có cảm giác tiếc nuối)</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">今、このマンガを<span class="grammar-highlight">読んでしまいます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">11</td>
-                        <td class="px-4 py-2">Vてしまいました</td>
-                        <td class="px-4 py-2">Đã lỡ ~ / Đã hoàn thành xong</td>
-                        <td class="px-4 py-2">財布を忘れてしまいました。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">11</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vてしまいました</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Đã lỡ ~ / Đã hoàn thành xong</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">財布を<span class="grammar-highlight">忘れてしまいました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">12</td>
-                        <td class="px-4 py-2">Vてちゃう／Vでじゃう</td>
-                        <td class="px-4 py-2">Dạng nói ngắn (văn nói) của Vてしまう / Vでしまう</td>
-                        <td class="px-4 py-2">食べないと食べちゃうよ。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">12</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vてちゃう／Vでじゃう</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Dạng nói ngắn (văn nói) của Vてしまう / Vでしまう</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">食べないと<span class="grammar-highlight">食べちゃう</span>よ。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">13</td>
-                        <td class="px-4 py-2">[Địa điểm] に N が Vてあります</td>
-                        <td class="px-4 py-2">Ở ~ có cái gì đang được ~</td>
-                        <td class="px-4 py-2">壁に絵が貼ってあります。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">13</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">[Địa điểm] に N が Vてあります</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Ở ~ có cái gì đang được ~</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">壁に絵が<span class="grammar-highlight">貼ってあります</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">14</td>
-                        <td class="px-4 py-2">Nは[địa điểm]にVてあります</td>
-                        <td class="px-4 py-2">Cái gì đó đang ở đâu ~</td>
-                        <td class="px-4 py-2">レンダーは壁に貼ってあります。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">14</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Nは[địa điểm]にVてあります</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Cái gì đó đang ở đâu ~</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">カレンダーは壁に<span class="grammar-highlight">貼ってあります</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">15</td>
-                        <td class="px-4 py-2">もうVてあります</td>
-                        <td class="px-4 py-2">Đã làm gì trước, đã làm sẵn ~</td>
-                        <td class="px-4 py-2">もう洗ってあります。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">15</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">もうVてあります</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Đã làm gì trước, đã làm sẵn ~</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">もう<span class="grammar-highlight">洗ってあります</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">16</td>
-                        <td class="px-4 py-2">Vておく</td>
-                        <td class="px-4 py-2">Làm sẵn, chuẩn bị trước</td>
-                        <td class="px-4 py-2">誕生日のパ</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">16</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vておく</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Làm sẵn, chuẩn bị trước</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">誕生日のパーティーを<span class="grammar-highlight">準備しておく</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">17</td>
-                        <td class="px-4 py-2">Vておいてください</td>
-                        <td class="px-4 py-2">Hãy để nguyên trạng thái như vậy</td>
-                        <td class="px-4 py-2">そこに置いておいてください。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">17</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vておいてください</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Hãy để nguyên trạng thái như vậy</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">そこに<span class="grammar-highlight">置いておいてください</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">18</td>
-                        <td class="px-4 py-2">Vとく＝Vておく（văn nói）</td>
-                        <td class="px-4 py-2">Cứ ~ như vậy</td>
-                        <td class="px-4 py-2">そこに置いといて。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">18</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vとく＝Vておく（văn nói）</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Cứ ~ như vậy</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">そこに<span class="grammar-highlight">置いといて</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">19</td>
-                        <td class="px-4 py-2">まだVています / まだVていません</td>
-                        <td class="px-4 py-2">Vẫn còn đang ~ / Vẫn chưa ~</td>
-                        <td class="px-4 py-2">まだ雨が降っています。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">19</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">まだVています / まだVていません</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vẫn còn đang ~ / Vẫn chưa ~</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">まだ雨が<span class="grammar-highlight">降っています</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">20</td>
-                        <td class="px-4 py-2">Vようと思います</td>
-                        <td class="px-4 py-2">Dự định làm gì đó (ý định của người nói)</td>
-                        <td class="px-4 py-2">自分の家を建てようと思う。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">20</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vようと思います</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Dự định làm gì đó (ý định của người nói)</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">自分の家を<span class="grammar-highlight">建てようと思う</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">21</td>
-                        <td class="px-4 py-2">Vようと思っています</td>
-                        <td class="px-4 py-2">Dự định chắc chắn làm gì (ý chí rõ ràng)</td>
-                        <td class="px-4 py-2">日本へ行って天ぷらを食べようと思っています。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">21</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vようと思っています</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Dự định chắc chắn làm gì (ý chí rõ ràng)</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">日本へ行って天ぷらを<span class="grammar-highlight">食べようと思っています</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">22</td>
-                        <td class="px-4 py-2">Vるつもりです</td>
-                        <td class="px-4 py-2">Dự định sẽ làm gì</td>
-                        <td class="px-4 py-2">中国語を習うつもりです。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">22</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Vるつもりです</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">Dự định sẽ làm gì</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">中国語を<span class="grammar-highlight">習うつもり</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">23</td>
-                        <td class="px-4 py-2">Vないつもりです</td>
-                        <td class="px-4 py-2">Dự định không làm gì</td>
-                        <td class="px-4 py-2">日本語を話さないつもりです。</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">23</td>
+                        <td class="px-2 py-1 sm:px-2 sm:py4">Vないつもりです</td>
+                        <td class="px-2 py-1 sm:px4 sm:py-2">Dự định không làm gì</td>
+                        <td class="px-2 py-1 sm:px-4 sm:py-2">日本語を<span class="grammar-highlight">話さないつもりです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">24</td>
-                        <td class="px-4 py-2">Vる / Nの + 予定です</td>
-                        <td class="px-4 py-2">Có kế hoạch làm gì</td>
-                        <td class="px-4 py-2">東京へ出張の予定です。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">24</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Vる / Nの + 予定です</td>
+                        <td class="px-2 py-2 py-4 sm:px-4 sm-py-2">Có kế hoạch làm gì</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">東京へ<span class="grammar-highlight">出張の予定です</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">25</td>
-                        <td class="px-4 py-2">Vた / Vない + ほうがいいです</td>
-                        <td class="px-4 py-2">Nên / Không nên làm gì</td>
-                        <td class="px-4 py-2">病院へ行ったほうがいいです。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">25</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Vた / Vない + ほうがいいです</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Nên / Không nên làm gì</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">病院へ<span class="grammar-highlight">行ったほうがいいです</span>。</td>
                     </tr>
+                    <tr class="border-b hover:bg-gray-50"> 
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">26</td> 
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Vる / Vない / Aい / Aくない / Aな / N + でしょう</td> 
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Có lẽ / chắc là ~</td> 
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">明日雨が<span class="grammar-highlight">降るでしょう</span> 
+                        </td> 
+                    </tr> 
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">26</td>
-                        <td class="px-4 py-2">Vる / Vない / Aい / Aくない / Aな / N + でしょう</td>
-                        <td class="px-4 py-2">Có lẽ / chắc là ~</td>
-                        <td class="px-4 py-2">明日雨が降るでしょう。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">27</td>
+                        <class="px-2 py-1 sm:px-4 sm-py-2">Vる / Vない / Aい / Aくない / Aな / N + かもしれません</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Có thể / không chừng là ~</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">明日は雨<span class="grammar-highlight">かもしれません</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">27</td>
-                        <td class="px-4 py-2">Vる / Vない / Aい / Aくない / Aな / N + かもしれません</td>
-                        <td class="px-4 py-2">Có thể / không chừng là ~</td>
-                        <td class="px-4 py-2">明日は雨かもしれません。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">28</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Vる</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Cấm làm gì</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">x-4 sm-py-2"><span class="grammar-highlight">行くな</span>。</span></td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">28</td>
-                        <td class="px-4 py-2">Vるな</td>
-                        <td class="px-4 py-2">Cấm làm gì</td>
-                        <td class="px-4 py-2">行くな。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">29</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Vます＋なさい</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Hãy làm gì ~ (mệnh lệnh nhẹ)</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">はやく<span class="grammar-highlight">食べなさい</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">29</td>
-                        <td class="px-4 py-2">Vます＋なさい</td>
-                        <td class="px-4 py-2">Hãy làm gì ~ (mệnh lệnh nhẹ)</td>
-                        <td class="px-4 py-2">はやく食べなさい。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">30</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">～と読みます / ～と書いてあります</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Đọc là / Viết là</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">あの漢字は「いりぐち」<span class="grammar-highlight">と読みます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">30</td>
-                        <td class="px-4 py-2">～と読みます / ～と書いてあります</td>
-                        <td class="px-4 py-2">Đọc là / Viết là</td>
-                        <td class="px-4 py-2">あの漢字は「いりぐち」と読みます。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">31</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">～という意味です</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Có nghĩa là</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">「ありがとう」は“Cảm ơn”<span class="grammar-highlight">という意味です</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">31</td>
-                        <td class="px-4 py-2">～という意味です</td>
-                        <td class="px-4 py-2">Có nghĩa là</td>
-                        <td class="px-4 py-2">「ありがとう」は“Cảm ơn”という意味です。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">32</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">～と言いました / ～と言っていました</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Ai đó đã nói rằng ~</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">田中さんが10時に本社に来る<span class="grammar-highlight">と言っていました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">32</td>
-                        <td class="px-4 py-2">～と言いました / ～と言っていました</td>
-                        <td class="px-4 py-2">Ai đó đã nói rằng ~</td>
-                        <td class="px-4 py-2">田中さんが10時に本社に来てくれと言っていました。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">33</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">[Câu văn] と伝えていただけませんか</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Nhờ truyền đạt lại lời nhắn</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">ワンさんに「後で電話をかけてください」<span class="grammar-highlight">と伝えていただけませんか</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">33</td>
-                        <td class="px-4 py-2">[Câu văn] と伝えていただけませんか</td>
-                        <td class="px-4 py-2">Nhờ truyền đạt lại lời nhắn</td>
-                        <td class="px-4 py-2">ワンさんに「後で電話をください」と伝えていただけませんか。</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">34</td>
+                        <td class="px-2 py-1 sm:px-4 sm-py-2">Vる / Vた / Nの + とおりに</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Làm theo như ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">私が今から言う<span class="grammar-highlight">とおりに</span>、書いてください。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">34</td>
-                        <td class="px-4 py-2">Vる / Vた / Nの + とおりに</td>
-                        <td class="px-4 py-2">Làm theo như ~</td>
-                        <td class="px-4 py-2">私が今から言うとおりに、書いてください。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">35</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vた / Nの + あとで</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Sau khi ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">新しいのを買った<span class="grammar-highlight">あとで</span>、なくした本が見つかりました。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">35</td>
-                        <td class="px-4 py-2">Vた / Nの + あとで</td>
-                        <td class="px-4 py-2">Sau khi ~</td>
-                        <td class="px-4 py-2">新しいのを買ったあとで、なくした本がみつかりました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">36</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">VてV2 / V-ないでV2</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Làm V2 có/không làm V</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">醤油を<span class="grammar-highlight">つけて</span>食べます。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">36</td>
-                        <td class="px-4 py-2">VてV2 / VないでV2</td>
-                        <td class="px-4 py-2">Làm V2 có/không làm V1</td>
-                        <td class="px-4 py-2">醤油をつけて食べます。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">37</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vば</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Nếu ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">意見が<span class="grammar-highlight">なければ</span>、これで終わりましょう。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">37</td>
-                        <td class="px-4 py-2">Vば</td>
-                        <td class="px-4 py-2">Nếu ~</td>
-                        <td class="px-4 py-2">意見がなければ、これで終わりましょう。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">38</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">どうすればいいですか</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Nên làm thế nào thì tốt?</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">電話番号がわからないんですが、<span class="grammar-highlight">どうすればいいですか</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">38</td>
-                        <td class="px-4 py-2">どうすればいいですか</td>
-                        <td class="px-4 py-2">Nên làm thế nào thì tốt?</td>
-                        <td class="px-4 py-2">電話番号がわからないんですが、どうすればいいですか。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">39</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Aい + なら</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Nếu là ~ (dùng khi khuyên)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">スーパーーパー<span class="grammar-highlight">なら</span>この近くにあります。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">39</td>
-                        <td class="px-4 py-2">Vる / Aい + なら</td>
-                        <td class="px-4 py-2">Nếu là ~ (dùng khi khuyên)</td>
-                        <td class="px-4 py-2">スーパーならこの近くにあります。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">40</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Aい / Aな + ほど</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Càng... càng...</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">勉強すればする<span class="grammar-highlight">ほど</span>上手になります。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">40</td>
-                        <td class="px-4 py-2">Vる / Aい / Aな + ほど</td>
-                        <td class="px-4 py-2">Càng... càng...</td>
-                        <td class="px-4 py-2">勉強すればするほど上手になります。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">41</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Vない + ように、B</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Để mà... thì...</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">新聞紙が読める<span class="grammar-highlight">ように</span>、漢字を勉強します。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">41</td>
-                        <td class="px-4 py-2">Vる / Vない + ように、B</td>
-                        <td class="px-4 py-2">Để mà... thì...</td>
-                        <td class="px-4 py-2">新聞が読めるように、漢字を勉強します。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">42</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Vない + ようになります</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Trở nên có thể / không thể</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">日本語が<span class="grammar-highlight">話せるようになりました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">42</td>
-                        <td class="px-4 py-2">Vる / Vない + ようになります</td>
-                        <td class="px-4 py-2">Trở nên có thể / không thể</td>
-                        <td class="px-4 py-2">日本語が話せるようになりました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">43</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Vない + ようにしています</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-py-2">Cố gắng làm gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">毎日<span class="grammar-highlight">運動するようにしています</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">43</td>
-                        <td class="px-4 py-2">Vる / Vない + ようにしています</td>
-                        <td class="px-4 py-2">Cố gắng làm gì</td>
-                        <td class="px-4 py-2">毎日運動するようにしています。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">44</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Vない + ようにしてください</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Hãy cố gắng làm gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">必ず時間を<span class="grammar-highlight">守るようにしてください</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">44</td>
-                        <td class="px-4 py-2">Vる / Vない + ようにしてください</td>
-                        <td class="px-4 py-2">Hãy cố gắng làm gì</td>
-                        <td class="px-4 py-2">必ず時間を守るようにしてください。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">45</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">人に + V（bị động）</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Bị ai đó / được ai đó làm gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">私は課長に<span class="grammar-highlight">褒められました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">45</td>
-                        <td class="px-4 py-2">人に + V（bị động）</td>
-                        <td class="px-4 py-2">Bị ai đó / được ai đó làm gì</td>
-                        <td class="px-4 py-2">私は課長に褒められました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">46</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">A は / が + V（bị động）</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Cái gì được / bị thực hiện</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">大阪で展覧会が<span class="grammar-highlight">開かれます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">46</td>
-                        <td class="px-4 py-2">A は / が + V（bị động）</td>
-                        <td class="px-4 py-2">Cái gì được / bị thực hiện</td>
-                        <td class="px-4 py-2">大阪で展覧会が開かれます。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">47</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">A は 人 + によって + V（bị động）</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Được làm bởi ai đó</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">電話はグラハム・ベル<span class="grammar-highlight">によって</span>発明されました。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">47</td>
-                        <td class="px-4 py-2">A は 人 + によって + V（bị động）</td>
-                        <td class="px-4 py-2">Được làm bởi ai đó</td>
-                        <td class="px-4 py-2">電話はグラハム・ベルによって発明されました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">48</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vるのは／が + Tính từです</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Việc ~ thì...</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2"><span class="grammar-highlight">サッカーをするのは</span>面白いです。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">48</td>
-                        <td class="px-4 py-2">Vるのは／が + Tính từです</td>
-                        <td class="px-4 py-2">Việc ~ thì...</td>
-                        <td class="px-4 py-2">サッカーをするのは面白いです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">49</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vるのを忘れました</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Quên làm gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">先生に<span class="grammar-highlight">電話をかけるのを忘れました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">49</td>
-                        <td class="px-4 py-2">Vるのを忘れました</td>
-                        <td class="px-4 py-2">Quên làm gì</td>
-                        <td class="px-4 py-2">先生に電話をかけるのを忘れました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">50</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vるのを知っていますか</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Có biết việc gì không</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">火事が<span class="grammar-highlight">あったのを知っていますか</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">50</td>
-                        <td class="px-4 py-2">Vるのを知っていますか</td>
-                        <td class="px-4 py-2">Có biết việc gì không</td>
-                        <td class="px-4 py-2">火事があったのを知っていますか。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">51</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">のは + Danh từ です</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Cái ~ là ~ (định danh)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">私が<span class="grammar-highlight">生まれたのは</span>北海道の小さい町です。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">51</td>
-                        <td class="px-4 py-2">のは + Danh từ です</td>
-                        <td class="px-4 py-2">Cái ~ là ~ (định danh)</td>
-                        <td class="px-4 py-2">私が生まれたのは北海道の小さい町です。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">52</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～て / ～なくて / ～くて / ～で</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vì ~ nên ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">テストが難しく<span class="grammar-highlight">て</span>、全然できなかった。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">52</td>
-                        <td class="px-4 py-2">～て / ～なくて / ～くて / ～で</td>
-                        <td class="px-4 py-2">Vì ~ nên ~</td>
-                        <td class="px-4 py-2">テストが難しくて、全然できなかった。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">53</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">V/Aい/Aな/N（thể thường）+ ので</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vì ~ nên ~ (lịch sự hơn から)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">バスが遅れた<span class="grammar-highlight">ので</span>、学校に遅刻しました。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">53</td>
-                        <td class="px-4 py-2">V/Aい/Aな/N（thể thường）+ ので</td>
-                        <td class="px-4 py-2">Vì ~ nên ~ (lịch sự hơn から)</td>
-                        <td class="px-4 py-2">バスが遅れたので、学校に遅刻しました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">54</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Nの + 途中で</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Trên đường / trong khi đang ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">来る<span class="grammar-highlight">途中で</span>彼に会いました。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">54</td>
-                        <td class="px-4 py-2">Vる / Nの + 途中で</td>
-                        <td class="px-4 py-2">Trên đường / trong khi đang ~</td>
-                        <td class="px-4 py-2">来る途中で彼に会いました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">55</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Từ nghi vấn + Aい / Aな / N + か + V</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Có biết ~ không?</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">先生が何を話している<span class="grammar-highlight">か</span>、わかりません。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">55</td>
-                        <td class="px-4 py-2">Từ nghi vấn + Aい / Aな / N + か + V</td>
-                        <td class="px-4 py-2">Có biết ~ không?</td>
-                        <td class="px-4 py-2">先生が何を話しているか、わかりません。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">56</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～かどうか</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Có hay không</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">そのうわさは本当<span class="grammar-highlight">かどうか</span>、調べます。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">56</td>
-                        <td class="px-4 py-2">～かどうか</td>
-                        <td class="px-4 py-2">Có hay không</td>
-                        <td class="px-4 py-2">そのうわさは本当かどうか、調べます。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">57</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vてみます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Thử làm gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">新しい靴を<span class="grammar-highlight">履いてみます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">57</td>
-                        <td class="px-4 py-2">Vてみます</td>
-                        <td class="px-4 py-2">Thử làm gì</td>
-                        <td class="px-4 py-2">新しい靴を履いてみます。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">58</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～さしあげます / あげます / やります</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Cho ai đó cái gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">社長にプレゼントを<span class="grammar-highlight">さしあげます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">58</td>
-                        <td class="px-4 py-2">～さしあげます / あげます / やります</td>
-                        <td class="px-4 py-2">Cho ai đó cái gì</td>
-                        <td class="px-4 py-2">社長にプレゼントをさしあげます。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">59</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～いただきます / もらいます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Nhận từ ai đó cái gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">おばあさんにセーターを<span class="grammar-highlight">もらいました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">59</td>
-                        <td class="px-4 py-2">～いただきます / もらいます</td>
-                        <td class="px-4 py-2">Nhận từ ai đó cái gì</td>
-                        <td class="px-4 py-2">おばあさんにセーターをもらいました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">60</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～くださいます / くれます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Ai đó cho mình cái gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">彼氏がバラの花を<span class="grammar-highlight">くれました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">60</td>
-                        <td class="px-4 py-2">～くださいます / くれます</td>
-                        <td class="px-4 py-2">Ai đó cho mình cái gì</td>
-                        <td class="px-4 py-2">彼氏がバラの花をくれました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">61</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～Vてさしあげます / あげます / やります</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Làm gì cho ai đó</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">子どもに絵本を<span class="grammar-highlight">読んでやりました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">61</td>
-                        <td class="px-4 py-2">～Vてさしあげます / あげます / やります</td>
-                        <td class="px-4 py-2">Làm gì đó cho ai</td>
-                        <td class="px-4 py-2">子どもに絵本を読んでやりました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">62</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～Vていただきます / もらいます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Được ai đó làm gì cho</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">部長にレポートを<span class="grammar-highlight">見ていただきました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">62</td>
-                        <td class="px-4 py-2">～Vていただきます / もらいます</td>
-                        <td class="px-4 py-2">Được ai đó làm gì cho</td>
-                        <td class="px-4 py-2">部長にレポートを見ていただきました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">63</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～Vてくださいます / くれます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Ai đó làm gì cho mình</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">社長は娘に書道を<span class="grammar-highlight">教えてくださいました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">63</td>
-                        <td class="px-4 py-2">～Vてくださいます / くれます</td>
-                        <td class="px-4 py-2">Ai đó làm gì cho mình</td>
-                        <td class="px-4 py-2">社長は娘に書道を教えてくださいました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">64</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">N1 に N2 を V</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Làm ~ làm quà, kỷ niệm</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">旅行のお土産に人形を<span class="grammar-highlight">買いました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">64</td>
-                        <td class="px-4 py-2">N1 に N2 を V</td>
-                        <td class="px-4 py-2">Làm ~ làm quà, kỷ niệm</td>
-                        <td class="px-4 py-2">旅行のお土産に人形を買いました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">65</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Nの + ために</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Để ~ / vì ~ / cho ~ (chỉ mục đích)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">大学に入る<span class="grammar-highlight">ために</span>勉強します。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">65</td>
-                        <td class="px-4 py-2">Vる / Nの + ために</td>
-                        <td class="px-4 py-2">Để ~ / vì ~ / cho ~ (chỉ mục đích)</td>
-                        <td class="px-4 py-2">大学に入るために勉強します。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">66</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vるの / N + に</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Dùng cho ~ / để làm gì đó ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">やかんはお湯を沸かす<span class="grammar-highlight">のに</span>使います。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">66</td>
-                        <td class="px-4 py-2">Vるの / N + に</td>
-                        <td class="px-4 py-2">Dùng cho ~ / để làm gì đó ~</td>
-                        <td class="px-4 py-2">やかんはお湯を沸かすのに使います。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">67</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Lượng từ + は～</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Tối thiểu là ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">パーティーをするのに10人<span class="grammar-highlight">は</span>必要です。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">67</td>
-                        <td class="px-4 py-2">Lượng từ + は～</td>
-                        <td class="px-4 py-2">Tối thiểu là ~</td>
-                        <td class="px-4 py-2">パーティーをするのに10人は必要です。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">68</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Lượng từ + も～</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Những / tận ~ (chỉ số lượng nhiều hơn dự kiến)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">学校まで行くのに2時間<span class="grammar-highlight">も</span>かかります。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">68</td>
-                        <td class="px-4 py-2">Lượng từ + も～</td>
-                        <td class="px-4 py-2">Những / tận ~ (chỉ số lượng nhiều hơn dự kiến)</td>
-                        <td class="px-4 py-2">学校まで行くのに2時間もかかります。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">69</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vます / Aい / Aな + そうです</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Trông có vẻ / có vẻ sắp ~ (dựa vào cảm giác)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">ケーキは<span class="grammar-highlight">おいしそうです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">69</td>
-                        <td class="px-4 py-2">Vます / Aい / Aな + そうです</td>
-                        <td class="px-4 py-2">Trông có vẻ / có vẻ sắp ~ (dựa vào cảm giác)</td>
-                        <td class="px-4 py-2">ケーキはおいしそうです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">70</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vて来ます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Đi làm gì rồi quay lại / trở nên ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">電話を<span class="grammar-highlight">かけて来ます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">70</td>
-                        <td class="px-4 py-2">Vて来ます</td>
-                        <td class="px-4 py-2">Đi làm gì rồi quay lại / trở nên ~</td>
-                        <td class="px-4 py-2">電話をかけて来ます。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">71</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vます + すぎます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Quá ~ (làm gì đó quá mức)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">昨日お酒を<span class="grammar-highlight">飲みすぎました</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">71</td>
-                        <td class="px-4 py-2">Vます + すぎます</td>
-                        <td class="px-4 py-2">Quá ~ (làm gì đó quá mức)</td>
-                        <td class="px-4 py-2">昨日お酒を飲みすぎました。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">72</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vます + やすい / にくい</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Dễ / khó làm gì đó</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">このコンピューターは<span class="grammar-highlight">使いやすいです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">72</td>
-                        <td class="px-4 py-2">Vます + やすい / にくい</td>
-                        <td class="px-4 py-2">Dễ / khó làm gì đó</td>
-                        <td class="px-4 py-2">このコンピューターは使いやすいです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">73</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Aいく / Aなに + V</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Tính từ bổ nghĩa cho động từ</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">音が小さいですから、<span class="grammar-highlight">大きくしてください</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">73</td>
-                        <td class="px-4 py-2">Aいく / Aなに + V</td>
-                        <td class="px-4 py-2">Tính từ bổ nghĩa cho động từ</td>
-                        <td class="px-4 py-2">音が小さいですから、大きくしてください。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">74</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Nにします</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Quyết định chọn ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">晩ご飯は<span class="grammar-highlight">和食にします</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">74</td>
-                        <td class="px-4 py-2">Nにします</td>
-                        <td class="px-4 py-2">Quyết định chọn ~</td>
-                        <td class="px-4 py-2">晩ご飯は和食にします。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">75</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Vた / Vない / Aい / Aな / Nの + 場合</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Trong trường hợp ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">間に合わない<span class="grammar-highlight">場合は</span>連絡してください。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">75</td>
-                        <td class="px-4 py-2">Vる / Vた / Vない / Aい / Aな / Nの + 場合</td>
-                        <td class="px-4 py-2">Trong trường hợp ~</td>
-                        <td class社會://4 py-2">間に合わない場合は連絡してください。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">76</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">V（thể thường）+ のに</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Thế mà / mặc dù</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">冬の山は危険な<span class="grammar-highlight">のに</span>登るんですか。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">76</td>
-                        <td class="px-4 py-2">V（thể thường）+ のに</td>
-                        <td class="px-4 py-2">Thế mà / mặc dù</td>
-                        <td class="px-4 py-2">冬の山は危険なのに登るんですか。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">77</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vる / Vている / Vた + ところです</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Đúng lúc đang / chuẩn bị / vừa mới làm gì đó</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">今からする<span class="grammar-highlight">ところです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">77</td>
-                        <td class="px-4 py-2">Vる / Vている / Vた + ところです</td>
-                        <td class="px-4 py-2">Đúng lúc đang / chuẩn bị / vừa mới làm gì đó</td>
-                        <td class="px-4 py-2">今からするところです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">78</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vた + ばかりです</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vừa mới ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">昼ご飯を<span class="grammar-highlight">食べたばかりです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">78</td>
-                        <td class="px-4 py-2">Vた + ばかりです</td>
-                        <td class="px-4 py-2">Vừa mới ~</td>
-                        <td class="px-4 py-2">昼ご飯を食べたばかりです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">79</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">V（thể thường）+ はずです</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Chắc chắn là ~ (dựa trên logic)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">雪が降ってきたから<span class="grammar-highlight">寒いはずです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">79</td>
-                        <td class="px-4 py-2">V（thể thường）+ はずです</td>
-                        <td class="px-4 py-2">Chắc chắn là ~ (dựa trên logic)</td>
-                        <td class="px-4 py-2">雪が降ってきたから寒いはずです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">80</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">V（thể thường）+ そうです（truyền đạt）</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Nghe nói là ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">天気予報によると明日は雨が<span class="grammar-highlight">降るそうです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">80</td>
-                        <td class="px-4 py-2">V（thể thường）+ そうです（truyền đạt）</td>
-                        <td class="px-4 py-2">Nghe nói là ~</td>
-                        <td class="px-4 py-2">天気予報によると明日は雨が降るそうです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">81</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">V（thể thường）+ ようです</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Hình như / có vẻ như (phán đoán qua cảm giác)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">彼はN1に合格した<span class="grammar-highlight">ようです</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">81</td>
-                        <td class="px-4 py-2">V（thể thường）+ ようです</td>
-                        <td class="px-4 py-2">Hình như / có vẻ như (phán đoán qua cảm giác)</td>
-                        <td class="px-4 py-2">彼はN1に合格したようです。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">82</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">V（thể thường）+ みたいです</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Hình như / có vẻ như (dựa trên ấn tượng hoặc thông tin)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">先生は来ない<span class="grammar-highlight">みたいです</span>ね。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">82</td>
-                        <td class="px-4 py-2">V（thể thường）+ みたいです</td>
-                        <td class="px-4 py-2">Hình như / có vẻ như (dựa trên ấn tượng hoặc thông tin)</td>
-                        <td class="px-4 py-2">先生は来ないみたいですね。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">83</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～音 / におい / 味がします</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Có âm thanh / mùi / vị ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">子供の<span class="grammar-highlight">声がします</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">83</td>
-                        <td class="px-4 py-2">～音 / におい / 味がします</td>
-                        <td class="px-4 py-2">Có âm thanh / mùi / vị ~</td>
-                        <td class="px-4 py-2">子供の声がします。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">84</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～に～をV（tha động từ）させます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Cho / bắt ai đó làm gì</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">学生にベトナム語を<span class="grammar-highlight">使わせます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">84</td>
-                        <td class="px-4 py-2">～に～をV（tha động từ）させます</td>
-                        <td class="px-4 py-2">Cho / bắt ai đó làm gì</td>
-                        <td class="px-4 py-2">学生にベトナム語を使わせない。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">85</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">～をV（tự động từ）させます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Cho ai đó tự làm gì (chủ động)</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">学生を<span class="grammar-highlight">帰らせます</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">85</td>
-                        <td class="px-4 py-2">～をV（tự động từ）させます</td>
-                        <td class="px-4 py-2">Cho ai đó tự làm gì (chủ động)</td>
-                        <td class="px-4 py-2">学生を帰らせる。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">86</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vさせていただけませんか</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Xin phép được làm gì ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">一日<span class="grammar-highlight">休ませていただけませんか</span>。</td>
                     </tr>
                     <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">86</td>
-                        <td class="px-4 py-2">Vさせていただけませんか</td>
-                        <td class="px-4 py-2">Xin phép được làm gì ~</td>
-                        <td class="px-4 py-2">一日休ませていただけませんか。</td>
-                    </tr>
-                    <tr class="border-b hover:bg-gray-50">
-                        <td class="px-4 py-2">87</td>
-                        <td class="px-4 py-2">Vさせていただきます</td>
-                        <td class="px-4 py-2">Xin phép (lịch sự) ~</td>
-                        <td class="px-4 py-2">先に帰らせていただきます。</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">87</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Vさせていただきます</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">Xin phép (lịch sự) ~</td>
+                        <td class="px-2 py-1 sm-py-4 sm-py-2">先に<span class="grammar-highlight">帰らせていただきます</span>。</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </main>
 
-    <!-- Adding a footer section -->
-    <footer class="w-full max-w-4xl mt-6 text-center text-gray-600">
+    <!-- Footer section -->
+    <footer class="w-full max-w-4xl mt-4 sm:mt-6 text-center text-gray-600 text-sm sm:text-base">
         <p>© 2025 Tài liệu kiểm tra | Thiết kế bởi Thuận</p>
     </footer>
+
+    <!-- JavaScript to highlight grammar in examples -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rows = document.querySelectorAll('tbody tr');
+
+            // Custom mapping for complex grammar patterns
+            const grammarMap = {
+                'N1 は～が、N2 は～': ['は', 'が'],
+                'Nができます / Vることができます': ['ことができます'],
+                'NしかVません': ['しか', 'ません'],
+                'V1ながらV2': ['ながら'],
+                '～し、～し、（それに）～': ['し'],
+                '～し、～し、（それで）～': ['し'],
+                'いつもVています': ['ています'],
+                'Vてしまいます': ['てしまいます'],
+                'Vてしまいました': ['てしまいました'],
+                'Vてちゃう／Vでじゃう': ['てちゃう', 'でじゃう'],
+                '[Địa điểm] に N が Vてあります': ['てあります'],
+                'Nは[địa điểm]にVてあります': ['てあります'],
+                'もうVてあります': ['てあります'],
+                'Vておく': ['ておく'],
+                'Vておいてください': ['ておいてください'],
+                'Vとく＝Vておく（văn nói）': ['とく', 'といて'],
+                'まだVています / まだVていません': ['ています', 'ていません'],
+                'Vようと思います': ['ようと思う'],
+                'Vようと思っています': ['ようと思っています'],
+                'Vるつもりです': ['つもりです'],
+                'Vないつもりです': ['ないつもりです'],
+                'Vる / Nの + 予定です': ['予定です'],
+                'Vた / Vない + ほうがいいです': ['ほうがいいです'],
+                'Vる / Vない / Aい / Aくない / Aな / N + でしょう': ['でしょう'],
+                'Vる / Vない / Aい / Aくない / Aな / N + かもしれません': ['かもしれません'],
+                'Vるな': ['な'],
+                'Vます＋なさい': ['なさい'],
+                '～と読みます / ～と書いてあります': ['と読みます', 'と書いてあります'],
+                '～という意味です': ['という意味です'],
+                '～と言いました / ～と言っていました': ['と言いました', 'と言っていました'],
+                '[Câu văn] と伝えていただけませんか': ['と伝えていただけませんか'],
+                'Vる / Vた / Nの + とおりに': ['とおりに'],
+                'Vた / Nの + あとで': ['あとで'],
+                'VてV2 / VないでV2': ['て', 'ないで'],
+                'Vば': ['ば'],
+                'どうすればいいですか': ['どうすればいいですか'],
+                'Vる / Aい + なら': ['なら'],
+                'Vる / Aい / Aな + ほど': ['ほど'],
+                'Vる / Vない + ように、B': ['ように'],
+                'Vる / Vない + ようになります': ['ようになります'],
+                'Vる / Vない + ようにしています': ['ようにしています'],
+                'Vる / Vない + ようにしてください': ['ようにしてください'],
+                '人に + V（bị động）': ['られました', 'られます'],
+                'A は / が + V（bị động）': ['られました', 'られます'],
+                'A は 人 + によって + V（bị động）': ['によって'],
+                'Vるのは／が + Tính từです': ['のは', 'が'],
+                'Vるのを忘れました': ['のを忘れました'],
+                'Vるのを知っていますか': ['のを知っていますか'],
+                'のは + Danh từ です': ['のは'],
+                '～て / ～なくて / ～くて / ～で': ['て', 'なくて', 'くて', 'で'],
+                'V/Aい/Aな/N（thể thường）+ ので': ['ので'],
+                'Vる / Nの + 途中で': ['途中で'],
+                'Từ nghi vấn + Aい / Aな / N + か + V': ['か'],
+                '～かどうか': ['かどうか'],
+                'Vてみます': ['てみます'],
+                '～さしあげます / あげます / やります': ['さしあげます', 'あげます', 'やります'],
+                '～いただきます / もらいます': ['いただきます', 'もらいます'],
+                '～くださいます / くれます': ['くださいます', 'くれます'],
+                '～Vてさしあげます / あげます / やります': ['てさしあげます', 'てあげます', 'てやります'],
+                '～Vていただきます / もらいます': ['ていただきます', 'てもらいます'],
+                '～Vてくださいます / くれます': ['てくださいます', 'てくれます'],
+                'N1 に N2 を V': ['に'],
+                'Vる / Nの + ために': ['ために'],
+                'Vるの / N + に': ['のに'],
+                'Lượng từ + は～': ['は'],
+                'Lượng từ + も～': ['も'],
+                'Vます / Aい / Aな + そうです': ['そうです'],
+                'Vて来ます': ['て来ます'],
+                'Vます + すぎます': ['すぎます'],
+                'Vます + やすい / にくい': ['やすい', 'にくい'],
+                'Aいく / Aなに + V': ['く'],
+                'Vる / Vた / Vない / Aい / Aな / Nの + 場合': ['場合'],
+                'V（thể thường）+ のに': ['のに'],
+                'Vる / Vている / Vた + ところです': ['ところです'],
+                'Vた + ばかりです': ['ばかりです'],
+                'V（thể thường）+ はずです': ['はずです'],
+                'V（thể thường）+ そうです（truyền đạt）': ['そうです'],
+                'V（thể thường）+ ようです': ['ようです'],
+                'V（thể thường）+ みたいです': ['みたいです'],
+                '～音 / におい / 味がします': ['がします'],
+                '～に～をV（tha động từ）させます': ['させます'],
+                '～をV（tự động từ）させます': ['させます'],
+                'Vさせていただけませんか': ['させていただけませんか'],
+                'Vさせていただきます': ['させていただきます']
+            };
+
+            rows.forEach((row, index) => {
+                // Check if row has enough cells
+                if (!row.cells || row.cells.length < 4) {
+                    console.warn(`Row ${index + 1} does not have enough cells:`, row);
+                    return; // Skip this row
+                }
+
+                // Safely access cells
+                const grammarCell = row.cells[1]?.textContent?.trim();
+                const exampleCell = row.cells[3];
+                const exampleText = exampleCell?.textContent?.trim();
+
+                // Skip if grammar or example text is missing
+                if (!grammarCell || !exampleText) {
+                    console.warn(`Row ${index + 1} missing grammar or example text:`, { grammarCell, exampleText });
+                    return;
+                }
+
+                // Get the relevant grammar patterns to highlight
+                const patterns = grammarMap[grammarCell] || [grammarCell];
+
+                // Create a regex pattern that matches any of the grammar patterns
+                const regex = new RegExp(`(${patterns.join('|')})`, 'g');
+
+                // Replace matching grammar patterns with highlighted version
+                if (patterns.some(pattern => exampleText.includes(pattern))) {
+                    const highlightedText = exampleText.replace(regex, `<span class="grammar-highlight">$1</span>`);
+                    exampleCell.innerHTML = highlightedText;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
